@@ -117,7 +117,7 @@ public class MortgageApplication implements java.io.Serializable {
 	}
 
 	public MortgageApplication(java.lang.String id,
-			java.lang.String lengthOfLoanYears,
+			java.lang.Integer lengthOfLoanYears,
 			java.lang.Integer baseLoanAmount, java.lang.Integer downpayment,
 			java.lang.Integer annualMIP, java.lang.String program,
 			com.redhat.bpms.example.pmi.Property property, java.lang.Float ltv,
