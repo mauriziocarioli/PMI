@@ -21,7 +21,6 @@ public class MortgageApplication implements java.io.Serializable {
 	private java.lang.Float rate;
 	@org.kie.api.definition.type.Label("annual MIP (bps)")
 	private java.lang.Integer annualMIP;
-
 	@org.kie.api.definition.type.Label(value = "program")
 	private java.lang.String program;
 
@@ -77,12 +76,12 @@ public class MortgageApplication implements java.io.Serializable {
 	}
 
 	public MortgageApplication(java.lang.Integer baseLoanAmount,
-			java.lang.Integer annualMIP, java.lang.String type,
+			java.lang.Integer annualMIP, java.lang.String program,
 			java.lang.String lengthOfLoanYears, java.lang.Integer downpayment,
 			java.lang.Float rate, java.lang.String id) {
 		this.baseLoanAmount = baseLoanAmount;
 		this.annualMIP = annualMIP;
-		this.type = type;
+		this.program = program;
 		this.lengthOfLoanYears = lengthOfLoanYears;
 		this.downpayment = downpayment;
 		this.rate = rate;
