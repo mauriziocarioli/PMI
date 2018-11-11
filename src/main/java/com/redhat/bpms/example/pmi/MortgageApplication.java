@@ -12,7 +12,7 @@ public class MortgageApplication implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("id")
 	private java.lang.String id;
 	@org.kie.api.definition.type.Label("length of loan (years)")
-	private java.lang.String lengthOfLoanYears;
+	private java.lang.Integer lengthOfLoanYears;
 	@org.kie.api.definition.type.Label("base loan amount")
 	private java.lang.Integer baseLoanAmount;
 	@org.kie.api.definition.type.Label("down payment")
@@ -21,13 +21,10 @@ public class MortgageApplication implements java.io.Serializable {
 	private java.lang.Integer annualMIP;
 	@org.kie.api.definition.type.Label("program")
 	private java.lang.String program;
-
 	@org.kie.api.definition.type.Label("property")
 	private com.redhat.bpms.example.pmi.Property property;
-
 	@org.kie.api.definition.type.Label("LTV")
 	private java.lang.Float ltv;
-
 	@org.kie.api.definition.type.Label(value = "APR")
 	private java.lang.Float apr;
 
@@ -50,11 +47,11 @@ public class MortgageApplication implements java.io.Serializable {
 		this.annualMIP = annualMIP;
 	}
 
-	public java.lang.String getLengthOfLoanYears() {
+	public java.lang.Integer getLengthOfLoanYears() {
 		return this.lengthOfLoanYears;
 	}
 
-	public void setLengthOfLoanYears(java.lang.String lengthOfLoanYears) {
+	public void setLengthOfLoanYears(java.lang.Integer lengthOfLoanYears) {
 		this.lengthOfLoanYears = lengthOfLoanYears;
 	}
 
