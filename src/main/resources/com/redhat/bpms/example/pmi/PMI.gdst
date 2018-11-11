@@ -9,7 +9,20 @@
     <width>150</width>
   </descriptionCol>
   <metadataCols/>
-  <attributeCols/>
+  <attributeCols>
+    <attribute-column52>
+      <typedDefaultValue>
+        <valueString>calculation</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>100</width>
+      <attribute>ruleflow-group</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
+  </attributeCols>
   <conditionPatterns>
     <Pattern52>
       <factType>MortgageApplication</factType>
@@ -73,7 +86,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>baseLoanAmount</factField>
           <fieldType>Integer</fieldType>
-          <operator>&gt;=</operator>
+          <operator>&gt;</operator>
           <parameters/>
         </condition-column52>
         <condition-column52>
@@ -88,7 +101,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>baseLoanAmount</factField>
           <fieldType>Integer</fieldType>
-          <operator>&lt;</operator>
+          <operator>&lt;=</operator>
           <parameters/>
         </condition-column52>
         <condition-column52>
@@ -103,7 +116,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>ltv</factField>
           <fieldType>Float</fieldType>
-          <operator>&gt;=</operator>
+          <operator>&gt;</operator>
           <parameters/>
         </condition-column52>
         <condition-column52>
@@ -118,7 +131,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>ltv</factField>
           <fieldType>Float</fieldType>
-          <operator>&lt;</operator>
+          <operator>&lt;=</operator>
           <parameters/>
         </condition-column52>
       </conditions>
@@ -190,6 +203,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>FHA</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -237,6 +255,11 @@
         <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -299,6 +322,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>FHA</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -345,6 +373,11 @@
         <valueNumeric class="int">4</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -407,6 +440,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>FHA</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -452,6 +490,11 @@
         <valueNumeric class="int">6</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -515,6 +558,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>FHA</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -544,7 +592,11 @@
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[7]/typedDefaultValue"/>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
       <value>
         <valueNumeric class="int">85</valueNumeric>
         <valueString></valueString>
@@ -557,6 +609,11 @@
         <valueNumeric class="int">8</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -582,7 +639,11 @@
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[5]/typedDefaultValue"/>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
       <value>
         <valueNumeric class="float">0.0</valueNumeric>
         <valueString></valueString>
@@ -607,6 +668,11 @@
         <valueNumeric class="int">9</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -664,6 +730,11 @@
         <valueNumeric class="int">10</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
