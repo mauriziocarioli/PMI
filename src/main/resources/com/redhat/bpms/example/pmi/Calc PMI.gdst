@@ -24,37 +24,10 @@
     </attribute-column52>
   </attributeCols>
   <conditionPatterns>
-    <Pattern52>
-      <factType>MortgageApplication</factType>
-      <boundName>m</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString>none</valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>Program</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>program</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <parameters/>
-          <binding></binding>
-        </condition-column52>
-      </conditions>
-      <window>
-        <parameters/>
-      </window>
-      <entryPointName></entryPointName>
-    </Pattern52>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Base Loan Amount</header>
+      <header>Mortgage Application</header>
       <constraintValueType>1</constraintValueType>
       <parameters/>
       <definition>
@@ -62,15 +35,18 @@
           <constraintList>
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <constraintValueType>0</constraintValueType>
+                <value>none</value>
+                <operator>==</operator>
+                <constraintValueType>4</constraintValueType>
                 <expression>
                   <parts/>
                   <index>2147483647</index>
                 </expression>
                 <parameters/>
+                <fieldBinding>Program</fieldBinding>
                 <factType>MortgageApplication</factType>
-                <fieldName>lengthOfLoanYears</fieldName>
-                <fieldType>Integer</fieldType>
+                <fieldName>program</fieldName>
+                <fieldType>String</fieldType>
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
                 <compositeJunctionType>&amp;&amp;</compositeJunctionType>
@@ -84,6 +60,7 @@
                       <index>2147483647</index>
                     </expression>
                     <parameters/>
+                    <fieldBinding>MinYears</fieldBinding>
                     <factType>MortgageApplication</factType>
                     <fieldName>lengthOfLoanYears</fieldName>
                     <fieldType>Integer</fieldType>
@@ -97,15 +74,83 @@
                       <index>2147483647</index>
                     </expression>
                     <parameters/>
+                    <fieldBinding>MaxYears</fieldBinding>
                     <factType>MortgageApplication</factType>
                     <fieldName>lengthOfLoanYears</fieldName>
                     <fieldType>Integer</fieldType>
                   </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                 </constraints>
               </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+              <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <value>0</value>
+                    <operator>&gt;=</operator>
+                    <constraintValueType>1</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <fieldBinding>MinLoan</fieldBinding>
+                    <factType>MortgageApplication</factType>
+                    <fieldName>baseLoanAmount</fieldName>
+                    <fieldType>Integer</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <value>0</value>
+                    <operator>&lt;</operator>
+                    <constraintValueType>1</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <fieldBinding>MaxLoan</fieldBinding>
+                    <factType>MortgageApplication</factType>
+                    <fieldName>baseLoanAmount</fieldName>
+                    <fieldType>Integer</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                </constraints>
+              </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+              <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <value>0.0</value>
+                    <operator>&gt;=</operator>
+                    <constraintValueType>1</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <fieldBinding>MinLTV</fieldBinding>
+                    <factType>MortgageApplication</factType>
+                    <fieldName>ltv</fieldName>
+                    <fieldType>Float</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <value>0.0</value>
+                    <operator>&lt;</operator>
+                    <constraintValueType>1</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <fieldBinding>MaxLTV</fieldBinding>
+                    <factType>MortgageApplication</factType>
+                    <fieldName>ltv</fieldName>
+                    <fieldType>Float</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                </constraints>
+              </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
             </constraints>
           </constraintList>
           <factType>MortgageApplication</factType>
+          <boundName>mortgage</boundName>
           <isNegated>false</isNegated>
           <window>
             <parameters/>
@@ -116,7 +161,7 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>Base Loan Amount</header>
+          <header>Mortgage Application</header>
           <constraintValueType>1</constraintValueType>
           <fieldType>Boolean</fieldType>
           <parameters/>
