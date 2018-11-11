@@ -1,3 +1,2 @@
 package com.redhat.bpms.example.pmi;
 
-global java.lang.Float LTV;
