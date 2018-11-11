@@ -35,9 +35,8 @@
           <constraintList>
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>none</value>
                 <operator>==</operator>
-                <constraintValueType>4</constraintValueType>
+                <constraintValueType>0</constraintValueType>
                 <expression>
                   <parts/>
                   <index>2147483647</index>
@@ -52,9 +51,8 @@
                 <compositeJunctionType>&amp;&amp;</compositeJunctionType>
                 <constraints>
                   <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                    <value>0</value>
                     <operator>&gt;</operator>
-                    <constraintValueType>1</constraintValueType>
+                    <constraintValueType>0</constraintValueType>
                     <expression>
                       <parts/>
                       <index>2147483647</index>
@@ -66,9 +64,8 @@
                     <fieldType>Integer</fieldType>
                   </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                   <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                    <value>0</value>
                     <operator>&lt;=</operator>
-                    <constraintValueType>1</constraintValueType>
+                    <constraintValueType>0</constraintValueType>
                     <expression>
                       <parts/>
                       <index>2147483647</index>
@@ -85,9 +82,8 @@
                 <compositeJunctionType>&amp;&amp;</compositeJunctionType>
                 <constraints>
                   <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                    <value>0</value>
                     <operator>&gt;=</operator>
-                    <constraintValueType>1</constraintValueType>
+                    <constraintValueType>0</constraintValueType>
                     <expression>
                       <parts/>
                       <index>2147483647</index>
@@ -99,9 +95,8 @@
                     <fieldType>Integer</fieldType>
                   </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                   <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                    <value>0</value>
                     <operator>&lt;</operator>
-                    <constraintValueType>1</constraintValueType>
+                    <constraintValueType>0</constraintValueType>
                     <expression>
                       <parts/>
                       <index>2147483647</index>
@@ -118,9 +113,8 @@
                 <compositeJunctionType>&amp;&amp;</compositeJunctionType>
                 <constraints>
                   <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                    <value>0.0</value>
                     <operator>&gt;=</operator>
-                    <constraintValueType>1</constraintValueType>
+                    <constraintValueType>0</constraintValueType>
                     <expression>
                       <parts/>
                       <index>2147483647</index>
@@ -132,9 +126,8 @@
                     <fieldType>Float</fieldType>
                   </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                   <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                    <value>0.0</value>
                     <operator>&lt;</operator>
-                    <constraintValueType>1</constraintValueType>
+                    <constraintValueType>0</constraintValueType>
                     <expression>
                       <parts/>
                       <index>2147483647</index>
