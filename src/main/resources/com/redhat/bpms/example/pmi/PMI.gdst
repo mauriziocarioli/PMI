@@ -16,7 +16,7 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
-      <hideColumn>true</hideColumn>
+      <hideColumn>false</hideColumn>
       <width>100</width>
       <attribute>ruleflow-group</attribute>
       <reverseOrder>false</reverseOrder>
