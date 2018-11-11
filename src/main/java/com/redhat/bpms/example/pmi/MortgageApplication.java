@@ -9,18 +9,21 @@ public class MortgageApplication implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "base loan amount")
+	@org.kie.api.definition.type.Label("base loan amount")
 	private java.lang.Integer baseLoanAmount;
-	@org.kie.api.definition.type.Label(value = "annual MIP (bps)")
+	@org.kie.api.definition.type.Label("annual MIP (bps)")
 	private java.lang.Integer annualMIP;
-	@org.kie.api.definition.type.Label(value = "type")
+	@org.kie.api.definition.type.Label("type")
 	private java.lang.String type;
-	@org.kie.api.definition.type.Label(value = "length of loan (years)")
+	@org.kie.api.definition.type.Label("length of loan (years)")
 	private java.lang.String lengthOfLoanYears;
-	@org.kie.api.definition.type.Label(value = "down payment")
+	@org.kie.api.definition.type.Label("down payment")
 	private java.lang.Integer downpayment;
-	@org.kie.api.definition.type.Label(value = "rate")
+	@org.kie.api.definition.type.Label("rate")
 	private java.lang.Float rate;
+
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.String id;
 
 	public MortgageApplication() {
 	}
@@ -73,16 +76,25 @@ public class MortgageApplication implements java.io.Serializable {
 		this.rate = rate;
 	}
 
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
 	public MortgageApplication(java.lang.Integer baseLoanAmount,
 			java.lang.Integer annualMIP, java.lang.String type,
 			java.lang.String lengthOfLoanYears, java.lang.Integer downpayment,
-			java.lang.Float rate) {
+			java.lang.Float rate, java.lang.String id) {
 		this.baseLoanAmount = baseLoanAmount;
 		this.annualMIP = annualMIP;
 		this.type = type;
 		this.lengthOfLoanYears = lengthOfLoanYears;
 		this.downpayment = downpayment;
 		this.rate = rate;
+		this.id = id;
 	}
 
 }
