@@ -6,5 +6,7 @@ rule "Set LTV"
 	dialect "mvel"
 	agenda-group "initialization"
 	when
+		mortgage : MortgageApplication( loan : baseLoanAmount > "0" , property : property != null , value : property.price > "0" )
 	then
+		mortgage.setLtv( loan/value );
 end
