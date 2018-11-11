@@ -21,8 +21,11 @@ public class MortgageApplication implements java.io.Serializable {
 	private java.lang.Float rate;
 	@org.kie.api.definition.type.Label("annual MIP (bps)")
 	private java.lang.Integer annualMIP;
-	@org.kie.api.definition.type.Label(value = "program")
+	@org.kie.api.definition.type.Label("program")
 	private java.lang.String program;
+
+	@org.kie.api.definition.type.Label(value = "property")
+	private com.redhat.bpms.example.pmi.Property property;
 
 	public MortgageApplication() {
 	}
@@ -96,11 +99,20 @@ public class MortgageApplication implements java.io.Serializable {
 		this.program = program;
 	}
 
+	public com.redhat.bpms.example.pmi.Property getProperty() {
+		return this.property;
+	}
+
+	public void setProperty(com.redhat.bpms.example.pmi.Property property) {
+		this.property = property;
+	}
+
 	public MortgageApplication(java.lang.String id,
 			java.lang.String lengthOfLoanYears,
 			java.lang.Integer baseLoanAmount, java.lang.Integer downpayment,
 			java.lang.Float rate, java.lang.Integer annualMIP,
-			java.lang.String program) {
+			java.lang.String program,
+			com.redhat.bpms.example.pmi.Property property) {
 		this.id = id;
 		this.lengthOfLoanYears = lengthOfLoanYears;
 		this.baseLoanAmount = baseLoanAmount;
@@ -108,6 +120,7 @@ public class MortgageApplication implements java.io.Serializable {
 		this.rate = rate;
 		this.annualMIP = annualMIP;
 		this.program = program;
+		this.property = property;
 	}
 
 }
