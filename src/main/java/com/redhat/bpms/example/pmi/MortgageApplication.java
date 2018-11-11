@@ -17,8 +17,6 @@ public class MortgageApplication implements java.io.Serializable {
 	private java.lang.Integer baseLoanAmount;
 	@org.kie.api.definition.type.Label("down payment")
 	private java.lang.Integer downpayment;
-	@org.kie.api.definition.type.Label("rate")
-	private java.lang.Float rate;
 	@org.kie.api.definition.type.Label("annual MIP (bps)")
 	private java.lang.Integer annualMIP;
 	@org.kie.api.definition.type.Label("program")
@@ -27,8 +25,11 @@ public class MortgageApplication implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("property")
 	private com.redhat.bpms.example.pmi.Property property;
 
-	@org.kie.api.definition.type.Label(value = "LTV")
+	@org.kie.api.definition.type.Label("LTV")
 	private java.lang.Float ltv;
+
+	@org.kie.api.definition.type.Label(value = "APR")
+	private java.lang.Float apr;
 
 	public MortgageApplication() {
 	}
@@ -63,14 +64,6 @@ public class MortgageApplication implements java.io.Serializable {
 
 	public void setDownpayment(java.lang.Integer downpayment) {
 		this.downpayment = downpayment;
-	}
-
-	public java.lang.Float getRate() {
-		return this.rate;
-	}
-
-	public void setRate(java.lang.Float rate) {
-		this.rate = rate;
 	}
 
 	public java.lang.String getId() {
@@ -118,21 +111,29 @@ public class MortgageApplication implements java.io.Serializable {
 		this.ltv = ltv;
 	}
 
+	public java.lang.Float getApr() {
+		return this.apr;
+	}
+
+	public void setApr(java.lang.Float apr) {
+		this.apr = apr;
+	}
+
 	public MortgageApplication(java.lang.String id,
 			java.lang.String lengthOfLoanYears,
 			java.lang.Integer baseLoanAmount, java.lang.Integer downpayment,
-			java.lang.Float rate, java.lang.Integer annualMIP,
-			java.lang.String program,
-			com.redhat.bpms.example.pmi.Property property, java.lang.Float ltv) {
+			java.lang.Integer annualMIP, java.lang.String program,
+			com.redhat.bpms.example.pmi.Property property, java.lang.Float ltv,
+			java.lang.Float apr) {
 		this.id = id;
 		this.lengthOfLoanYears = lengthOfLoanYears;
 		this.baseLoanAmount = baseLoanAmount;
 		this.downpayment = downpayment;
-		this.rate = rate;
 		this.annualMIP = annualMIP;
 		this.program = program;
 		this.property = property;
 		this.ltv = ltv;
+		this.apr = apr;
 	}
 
 }
