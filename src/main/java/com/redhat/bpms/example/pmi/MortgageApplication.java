@@ -13,9 +13,9 @@ public class MortgageApplication implements java.io.Serializable {
 	private java.lang.String id;
 	@org.kie.api.definition.type.Label("type")
 	private java.lang.String type;
-	@org.kie.api.definition.type.Label("base loan amount")
 	@org.kie.api.definition.type.Label("length of loan (years)")
 	private java.lang.String lengthOfLoanYears;
+	@org.kie.api.definition.type.Label("base loan amount")
 	private java.lang.Integer baseLoanAmount;
 	@org.kie.api.definition.type.Label("down payment")
 	private java.lang.Integer downpayment;
