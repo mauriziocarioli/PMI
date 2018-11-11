@@ -2,14 +2,27 @@
   <tableName>PMI</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
-  <attributeCols/>
+  <attributeCols>
+    <attribute-column52>
+      <typedDefaultValue>
+        <valueString>calculation</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>true</hideColumn>
+      <width>100</width>
+      <attribute>ruleflow-group</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
+  </attributeCols>
   <conditionPatterns>
     <Pattern52>
       <factType>MortgageApplication</factType>
@@ -23,7 +36,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>Base Loan Amount</header>
           <constraintValueType>1</constraintValueType>
           <factField>baseLoanAmount</factField>
@@ -38,7 +51,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>LTV</header>
           <constraintValueType>1</constraintValueType>
           <factField>ltv</factField>
@@ -46,10 +59,27 @@
           <operator>&gt;=</operator>
           <parameters/>
         </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString>FHA</valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Program</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>program</factField>
+          <fieldType>String</fieldType>
+          <operator>==</operator>
+          <parameters/>
+          <binding></binding>
+        </condition-column52>
       </conditions>
       <window>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
   <actionCols>
@@ -60,7 +90,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>Annual MIP (bps)</header>
       <boundName>f1</boundName>
       <factField>annualMIP</factField>
