@@ -71,10 +71,14 @@ public class MortgageApplication implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public MortgageApplication(java.lang.Integer baseLoanAmount,
-			java.lang.Integer annualMIP, java.lang.String program,
-			java.lang.String lengthOfLoanYears, java.lang.Integer downpayment,
-			java.lang.Float apr, java.lang.String id) {
+	public MortgageApplication(
+	        java.lang.Integer baseLoanAmount,
+			java.lang.Integer annualMIP, 
+			java.lang.String program,
+			java.lang.Integer lengthOfLoanYears, 
+			java.lang.Integer downpayment,
+			java.lang.Float apr, 
+			java.lang.String id) {
 		this.baseLoanAmount = baseLoanAmount;
 		this.annualMIP = annualMIP;
 		this.program = program;
