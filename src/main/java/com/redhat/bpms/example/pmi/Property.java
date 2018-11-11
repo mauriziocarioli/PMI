@@ -9,10 +9,13 @@ public class Property implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "price")
+	@org.kie.api.definition.type.Label("price")
 	private java.lang.Integer price;
-	@org.kie.api.definition.type.Label(value = "address")
+	@org.kie.api.definition.type.Label("address")
 	private java.lang.String address;
+
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.String id;
 
 	public Property() {
 	}
@@ -33,9 +36,19 @@ public class Property implements java.io.Serializable {
 		this.address = address;
 	}
 
-	public Property(java.lang.Integer price, java.lang.String address) {
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public Property(java.lang.Integer price, java.lang.String address,
+			java.lang.String id) {
 		this.price = price;
 		this.address = address;
+		this.id = id;
 	}
 
 }
