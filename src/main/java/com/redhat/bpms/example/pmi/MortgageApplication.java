@@ -9,21 +9,21 @@ public class MortgageApplication implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("base loan amount")
-	private java.lang.Integer baseLoanAmount;
-	@org.kie.api.definition.type.Label("annual MIP (bps)")
-	private java.lang.Integer annualMIP;
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.String id;
 	@org.kie.api.definition.type.Label("type")
 	private java.lang.String type;
+	@org.kie.api.definition.type.Label("base loan amount")
 	@org.kie.api.definition.type.Label("length of loan (years)")
 	private java.lang.String lengthOfLoanYears;
+	private java.lang.Integer baseLoanAmount;
 	@org.kie.api.definition.type.Label("down payment")
 	private java.lang.Integer downpayment;
 	@org.kie.api.definition.type.Label("rate")
 	private java.lang.Float rate;
+	@org.kie.api.definition.type.Label("annual MIP (bps)")
+	private java.lang.Integer annualMIP;
 
-	@org.kie.api.definition.type.Label(value = "id")
-	private java.lang.String id;
 
 	public MortgageApplication() {
 	}
