@@ -1,2 +1,1 @@
 'MortgageApplication.program' : ['FHA','USDA','VA','Fannie Mae','Freddie Mac','EEM','Native American Direct']
-'MortgageApplication.lengthOfLoanYears' : ['15','30']
