@@ -24,8 +24,11 @@ public class MortgageApplication implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("program")
 	private java.lang.String program;
 
-	@org.kie.api.definition.type.Label(value = "property")
+	@org.kie.api.definition.type.Label("property")
 	private com.redhat.bpms.example.pmi.Property property;
+
+	@org.kie.api.definition.type.Label(value = "LTV")
+	private java.lang.Float ltv;
 
 	public MortgageApplication() {
 	}
@@ -107,12 +110,20 @@ public class MortgageApplication implements java.io.Serializable {
 		this.property = property;
 	}
 
+	public java.lang.Float getLtv() {
+		return this.ltv;
+	}
+
+	public void setLtv(java.lang.Float ltv) {
+		this.ltv = ltv;
+	}
+
 	public MortgageApplication(java.lang.String id,
 			java.lang.String lengthOfLoanYears,
 			java.lang.Integer baseLoanAmount, java.lang.Integer downpayment,
 			java.lang.Float rate, java.lang.Integer annualMIP,
 			java.lang.String program,
-			com.redhat.bpms.example.pmi.Property property) {
+			com.redhat.bpms.example.pmi.Property property, java.lang.Float ltv) {
 		this.id = id;
 		this.lengthOfLoanYears = lengthOfLoanYears;
 		this.baseLoanAmount = baseLoanAmount;
@@ -121,6 +132,7 @@ public class MortgageApplication implements java.io.Serializable {
 		this.annualMIP = annualMIP;
 		this.program = program;
 		this.property = property;
+		this.ltv = ltv;
 	}
 
 }
