@@ -1,2 +1,12 @@
 package com.redhat.bpms.example.pmi;
 
+rule "PMI Tree_0"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears <= 15)
+then 
+end
+rule "PMI Tree_1"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears > 15)
+then 
+end
