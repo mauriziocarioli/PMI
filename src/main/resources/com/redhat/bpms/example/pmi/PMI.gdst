@@ -558,7 +558,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="float">96.0</valueNumeric>
+        <valueNumeric class="float">95.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
