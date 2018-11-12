@@ -34,8 +34,8 @@
       <name>calculation</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>28</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>30</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -53,7 +53,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-11-12 21:22:39.689 UTC</lastRunResult>
+  <lastRunResult>2018-11-12 21:25:57.553 UTC</lastRunResult>
   <rules/>
   <inclusive>true</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
