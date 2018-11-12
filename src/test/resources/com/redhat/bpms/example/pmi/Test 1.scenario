@@ -30,20 +30,26 @@
       <name>mortgage</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>103</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>annualMIP</fieldName>
-          <expected>45</expected>
+          <expected>0</expected>
+          <successResult>true</successResult>
+          <explanation>[mortgage] field [annualMIP] was [45].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>mortgage</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2018-11-12 21:13:37.342 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
