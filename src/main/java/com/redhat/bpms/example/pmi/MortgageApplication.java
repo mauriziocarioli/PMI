@@ -25,8 +25,11 @@ public class MortgageApplication implements java.io.Serializable {
 	private com.redhat.bpms.example.pmi.Property property;
 	@org.kie.api.definition.type.Label("LTV")
 	private java.lang.Float ltv;
-	@org.kie.api.definition.type.Label(value = "APR")
+	@org.kie.api.definition.type.Label("APR")
 	private java.lang.Float apr;
+
+	@org.kie.api.definition.type.Label(value = "credit score")
+	private java.lang.Float creditScore;
 
 	public MortgageApplication() {
 	}
@@ -71,14 +74,10 @@ public class MortgageApplication implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public MortgageApplication(
-	        java.lang.Integer baseLoanAmount,
-			java.lang.Integer annualMIP, 
-			java.lang.String program,
-			java.lang.Integer lengthOfLoanYears, 
-			java.lang.Integer downpayment,
-			java.lang.Float apr, 
-			java.lang.String id) {
+	public MortgageApplication(java.lang.Integer baseLoanAmount,
+			java.lang.Integer annualMIP, java.lang.String program,
+			java.lang.Integer lengthOfLoanYears, java.lang.Integer downpayment,
+			java.lang.Float apr, java.lang.String id) {
 		this.baseLoanAmount = baseLoanAmount;
 		this.annualMIP = annualMIP;
 		this.program = program;
@@ -120,12 +119,20 @@ public class MortgageApplication implements java.io.Serializable {
 		this.apr = apr;
 	}
 
+	public java.lang.Float getCreditScore() {
+		return this.creditScore;
+	}
+
+	public void setCreditScore(java.lang.Float creditScore) {
+		this.creditScore = creditScore;
+	}
+
 	public MortgageApplication(java.lang.String id,
 			java.lang.Integer lengthOfLoanYears,
 			java.lang.Integer baseLoanAmount, java.lang.Integer downpayment,
 			java.lang.Integer annualMIP, java.lang.String program,
 			com.redhat.bpms.example.pmi.Property property, java.lang.Float ltv,
-			java.lang.Float apr) {
+			java.lang.Float apr, java.lang.Float creditScore) {
 		this.id = id;
 		this.lengthOfLoanYears = lengthOfLoanYears;
 		this.baseLoanAmount = baseLoanAmount;
@@ -135,6 +142,7 @@ public class MortgageApplication implements java.io.Serializable {
 		this.property = property;
 		this.ltv = ltv;
 		this.apr = apr;
+		this.creditScore = creditScore;
 	}
 
 }
