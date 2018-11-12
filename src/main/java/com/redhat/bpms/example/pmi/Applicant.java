@@ -22,7 +22,7 @@ public class Applicant implements Serializable {
 	public Applicant() {
 	}
 
-	public getSsn() {
+	public String getSsn() {
 		return this.ssn;
 	}
 
