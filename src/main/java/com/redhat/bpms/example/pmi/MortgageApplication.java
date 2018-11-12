@@ -28,6 +28,9 @@ public class MortgageApplication implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("APR")
 	private java.lang.Float apr;
 
+	@org.kie.api.definition.type.Label(value = "applicant")
+	private com.redhat.bpms.example.pmi.Applicant applicant;
+
 	public MortgageApplication() {
 	}
 
@@ -116,12 +119,20 @@ public class MortgageApplication implements java.io.Serializable {
 		this.apr = apr;
 	}
 
+	public com.redhat.bpms.example.pmi.Applicant getApplicant() {
+		return this.applicant;
+	}
+
+	public void setApplicant(com.redhat.bpms.example.pmi.Applicant applicant) {
+		this.applicant = applicant;
+	}
+
 	public MortgageApplication(java.lang.String id,
 			java.lang.Integer lengthOfLoanYears,
 			java.lang.Integer baseLoanAmount, java.lang.Integer downpayment,
 			java.lang.Integer annualMIP, java.lang.String program,
 			com.redhat.bpms.example.pmi.Property property, java.lang.Float ltv,
-			java.lang.Float apr) {
+			java.lang.Float apr, com.redhat.bpms.example.pmi.Applicant applicant) {
 		this.id = id;
 		this.lengthOfLoanYears = lengthOfLoanYears;
 		this.baseLoanAmount = baseLoanAmount;
@@ -131,6 +142,7 @@ public class MortgageApplication implements java.io.Serializable {
 		this.property = property;
 		this.ltv = ltv;
 		this.apr = apr;
+		this.applicant = applicant;
 	}
 
 }
