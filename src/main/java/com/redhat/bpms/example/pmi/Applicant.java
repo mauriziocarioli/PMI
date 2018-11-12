@@ -6,12 +6,47 @@ package com.redhat.bpms.example.pmi;
 
 public class Applicant implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Applicant() {
-    }
+	@org.kie.api.definition.type.Label(value = "SSN")
+	private java.lang.String ssn;
+	@org.kie.api.definition.type.Label(value = "name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "credit score")
+	private java.lang.Float creditScore;
 
+	public Applicant() {
+	}
 
+	public java.lang.String getSsn() {
+		return this.ssn;
+	}
 
+	public void setSsn(java.lang.String ssn) {
+		this.ssn = ssn;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.Float getCreditScore() {
+		return this.creditScore;
+	}
+
+	public void setCreditScore(java.lang.Float creditScore) {
+		this.creditScore = creditScore;
+	}
+
+	public Applicant(java.lang.String ssn, java.lang.String name,
+			java.lang.Float creditScore) {
+		this.ssn = ssn;
+		this.name = name;
+		this.creditScore = creditScore;
+	}
 
 }
