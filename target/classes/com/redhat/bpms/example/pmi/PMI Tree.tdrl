@@ -1,0 +1,56 @@
+package com.redhat.bpms.example.pmi;
+
+rule "PMI Tree_0"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears <= 15, baseLoanAmount < 650000, ltv < 90.0)
+	then 
+		mortgage.setAnnualMIP( 45 );
+end
+rule "PMI Tree_1"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears <= 15, baseLoanAmount < 650000, ltv >= 90.0)
+	then 
+		mortgage.setAnnualMIP( 70 );
+end
+rule "PMI Tree_2"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears <= 15, baseLoanAmount >= 650000, ltv < 78.0)
+	then 
+		mortgage.setAnnualMIP( 45 );
+end
+rule "PMI Tree_3"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears <= 15, baseLoanAmount >= 650000, ltv >= 95.0)
+	then 
+		mortgage.setAnnualMIP( 95 );
+end
+rule "PMI Tree_4"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears <= 15, baseLoanAmount >= 650000, ltv >= 78.0)
+	then 
+		mortgage.setAnnualMIP( 70 );
+end
+rule "PMI Tree_5"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears > 15, baseLoanAmount < 650000, ltv < 95.0)
+	then 
+		mortgage.setAnnualMIP( 80 );
+end
+rule "PMI Tree_6"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears > 15, baseLoanAmount < 650000, ltv >= 95.0)
+	then 
+		mortgage.setAnnualMIP( 85 );
+end
+rule "PMI Tree_7"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears > 15, baseLoanAmount >= 650000, ltv < 95.0)
+	then 
+		mortgage.setAnnualMIP( 100 );
+end
+rule "PMI Tree_8"
+	when 
+		mortgage : MortgageApplication(program == "none", lengthOfLoanYears > 15, baseLoanAmount >= 650000, ltv >= 95.0)
+	then 
+		mortgage.setAnnualMIP( 105 );
+end
