@@ -28,9 +28,6 @@ public class MortgageApplication implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("APR")
 	private java.lang.Float apr;
 
-	@org.kie.api.definition.type.Label(value = "credit score")
-	private java.lang.Float creditScore;
-
 	public MortgageApplication() {
 	}
 
@@ -119,20 +116,12 @@ public class MortgageApplication implements java.io.Serializable {
 		this.apr = apr;
 	}
 
-	public java.lang.Float getCreditScore() {
-		return this.creditScore;
-	}
-
-	public void setCreditScore(java.lang.Float creditScore) {
-		this.creditScore = creditScore;
-	}
-
 	public MortgageApplication(java.lang.String id,
 			java.lang.Integer lengthOfLoanYears,
 			java.lang.Integer baseLoanAmount, java.lang.Integer downpayment,
 			java.lang.Integer annualMIP, java.lang.String program,
 			com.redhat.bpms.example.pmi.Property property, java.lang.Float ltv,
-			java.lang.Float apr, java.lang.Float creditScore) {
+			java.lang.Float apr) {
 		this.id = id;
 		this.lengthOfLoanYears = lengthOfLoanYears;
 		this.baseLoanAmount = baseLoanAmount;
@@ -142,7 +131,6 @@ public class MortgageApplication implements java.io.Serializable {
 		this.property = property;
 		this.ltv = ltv;
 		this.apr = apr;
-		this.creditScore = creditScore;
 	}
 
 }
