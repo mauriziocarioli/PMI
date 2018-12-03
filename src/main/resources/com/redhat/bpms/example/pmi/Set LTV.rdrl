@@ -3,7 +3,7 @@ package com.redhat.bpms.example.pmi;
 import java.lang.Number;
 
 rule "Set LTV"
-	@governance(UAT)
+	@governance(defined)
 	dialect "mvel"
 	ruleflow-group "initialization"
 	when
