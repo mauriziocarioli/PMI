@@ -34,7 +34,7 @@
       <name>calculation</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>54</executionTimeResult>
+      <executionTimeResult>57</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -52,15 +52,8 @@
       <name>mortgage</name>
       <anonymous>false</anonymous>
     </expect-fact>
-    <expect-rule>
-      <ruleName>Row 1 PMI</ruleName>
-      <explanation>Rule [Row 1 PMI] was activated 1 times.</explanation>
-      <expectedFire>true</expectedFire>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
-    </expect-rule>
   </fixtures>
-  <lastRunResult>2018-12-03 22:23:07.358 UTC</lastRunResult>
+  <lastRunResult>2018-12-03 22:25:02.641 UTC</lastRunResult>
   <rules/>
   <inclusive>true</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
