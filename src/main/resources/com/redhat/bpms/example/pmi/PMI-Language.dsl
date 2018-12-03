@@ -1,1 +1,1 @@
-[when]The mortgage program is {program} = mortgage : MortgageApplication( program == {program} )
+[when]The mortgage program is {program} = mortgage:MortgageApplication( program == {program} )
