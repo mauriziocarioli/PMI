@@ -1,0 +1,1 @@
+[when]The mortgage program is = mortgage : MortgageApplication( program == "FHA" )
