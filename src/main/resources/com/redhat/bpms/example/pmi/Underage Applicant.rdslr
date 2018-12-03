@@ -7,4 +7,5 @@ rule "Underage Applicant"
 	when
 		>applicant : Applicant( age < 18 )
 	then
+		>applicant.setApproved( false );
 end
