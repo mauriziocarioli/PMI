@@ -2,7 +2,12 @@
   <name>PMI Template</name>
   <modelVersion>1.0</modelVersion>
   <attributes/>
-  <metadataList/>
+  <metadataList>
+    <metadata>
+      <attributeName>governance</attributeName>
+      <value>defined</value>
+    </metadata>
+  </metadataList>
   <lhs>
     <fact>
       <constraintList>
