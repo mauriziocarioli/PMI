@@ -3,8 +3,77 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
-  <rhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$program</value>
+            <operator>matches</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>MortgageApplication</factType>
+            <fieldName>program</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+          <compositeConstraint>
+            <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+            <constraints>
+              <fieldConstraint>
+                <value>$minYears</value>
+                <operator>&gt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>MortgageApplication</factType>
+                <fieldName>lengthOfLoanYears</fieldName>
+                <fieldType>Integer</fieldType>
+              </fieldConstraint>
+              <fieldConstraint>
+                <value>$maxYears</value>
+                <operator>&lt;</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>MortgageApplication</factType>
+                <fieldName>lengthOfLoanYears</fieldName>
+                <fieldType>Integer</fieldType>
+              </fieldConstraint>
+            </constraints>
+          </compositeConstraint>
+        </constraints>
+      </constraintList>
+      <factType>MortgageApplication</factType>
+      <boundName>application</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
+  <rhs>
+    <setField>
+      <fieldValues>
+        <fieldValue>
+          <field>annualMIP</field>
+          <value>$annualMIP</value>
+          <nature>7</nature>
+          <type>Integer</type>
+        </fieldValue>
+      </fieldValues>
+      <variable>application</variable>
+    </setField>
+  </rhs>
   <imports>
     <imports/>
   </imports>
@@ -12,7 +81,23 @@
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>$minYears</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>$maxYears</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>$annualMIP</string>
+      <list/>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>$program</string>
       <list/>
     </entry>
   </table>
