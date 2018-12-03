@@ -5,6 +5,6 @@ import java.lang.Number;
 rule "Underage Applicant"
 	dialect "mvel"
 	when
-		>applicant : Applicant( )
+		>applicant : Applicant( age < 18 )
 	then
 end
