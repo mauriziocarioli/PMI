@@ -115,7 +115,7 @@
           <header>Min LTV %</header>
           <constraintValueType>1</constraintValueType>
           <factField>ltv</factField>
-          <fieldType>Double</fieldType>
+          <fieldType>Float</fieldType>
           <operator>&gt;</operator>
           <parameters/>
         </condition-column52>
@@ -130,7 +130,7 @@
           <header>Max LTV %</header>
           <constraintValueType>1</constraintValueType>
           <factField>ltv</factField>
-          <fieldType>Double</fieldType>
+          <fieldType>Float</fieldType>
           <operator>&lt;=</operator>
           <parameters/>
         </condition-column52>
@@ -237,19 +237,19 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">0.0</valueNumeric>
+        <valueNumeric class="float">0.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">90.0</valueNumeric>
+        <valueNumeric class="float">90.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">50</valueNumeric>
+        <valueNumeric class="int">45</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -302,9 +302,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">90.0</valueNumeric>
+        <valueNumeric class="float">90.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -365,15 +365,15 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">0.0</valueNumeric>
+        <valueNumeric class="float">0.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">78.0</valueNumeric>
+        <valueNumeric class="float">78.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -429,15 +429,15 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">78.0</valueNumeric>
+        <valueNumeric class="float">78.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">90.0</valueNumeric>
+        <valueNumeric class="float">90.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -493,9 +493,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">90.0</valueNumeric>
+        <valueNumeric class="float">90.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -552,15 +552,15 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">0.0</valueNumeric>
+        <valueNumeric class="float">0.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">95.0</valueNumeric>
+        <valueNumeric class="float">95.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -612,9 +612,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">95.0</valueNumeric>
+        <valueNumeric class="float">95.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -670,15 +670,15 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">0.0</valueNumeric>
+        <valueNumeric class="float">0.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">95.0</valueNumeric>
+        <valueNumeric class="float">95.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -733,9 +733,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="double">95.0</valueNumeric>
+        <valueNumeric class="float">95.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
