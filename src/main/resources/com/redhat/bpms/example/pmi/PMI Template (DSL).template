@@ -3,7 +3,17 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
+  <lhs>
+    <dslSentence>
+      <drl>mortgage:MortgageApplication( program == {program} )</drl>
+      <definition>The mortgage program is {program}</definition>
+      <values>
+        <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+          <value>program</value>
+        </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+      </values>
+    </dslSentence>
+  </lhs>
   <rhs/>
   <imports>
     <imports/>
