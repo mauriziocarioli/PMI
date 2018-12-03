@@ -1,1 +1,1 @@
-[when]The mortgage program is = mortgage : MortgageApplication( program == "FHA" )
+[when]The mortgage program is = mortgage : MortgageApplication( program == $program )
