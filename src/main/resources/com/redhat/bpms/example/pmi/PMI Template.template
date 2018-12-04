@@ -152,11 +152,17 @@
       <list>
         <string>0</string>
         <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
       </list>
     </entry>
     <entry>
       <string>$maxYears</string>
       <list>
+        <string>15</string>
+        <string>15</string>
+        <string>15</string>
         <string>15</string>
         <string>15</string>
       </list>
@@ -166,11 +172,17 @@
       <list>
         <string>45</string>
         <string>70</string>
+        <string>45</string>
+        <string>70</string>
+        <string>95</string>
       </list>
     </entry>
     <entry>
       <string>$maxLTV</string>
       <list>
+        <string>90</string>
+        <string></string>
+        <string>78</string>
         <string>90</string>
         <string></string>
       </list>
@@ -180,11 +192,17 @@
       <list>
         <string>2</string>
         <string>3</string>
+        <string>4</string>
+        <string>5</string>
+        <string>6</string>
       </list>
     </entry>
     <entry>
       <string>$program</string>
       <list>
+        <string>Freddie Mac</string>
+        <string>Freddie Mac</string>
+        <string>Freddie Mac</string>
         <string>Freddie Mac</string>
         <string>Freddie Mac</string>
       </list>
@@ -194,12 +212,18 @@
       <list>
         <string>0</string>
         <string></string>
+        <string>625000</string>
+        <string>625000</string>
+        <string>625000</string>
       </list>
     </entry>
     <entry>
       <string>$minLTV</string>
       <list>
         <string>0</string>
+        <string>90</string>
+        <string></string>
+        <string>78</string>
         <string>90</string>
       </list>
     </entry>
@@ -208,9 +232,12 @@
       <list>
         <string>650000</string>
         <string>650000</string>
+        <string></string>
+        <string></string>
+        <string></string>
       </list>
     </entry>
   </table>
-  <idCol>3</idCol>
-  <rowsCount>2</rowsCount>
+  <idCol>6</idCol>
+  <rowsCount>5</rowsCount>
 </rule>
