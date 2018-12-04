@@ -6,7 +6,6 @@ rule "Bad Credit"
 	dialect "mvel"
 	when
 		If the applicant credit score is less than 300
-		If the mortgage program is "Fannie Mae"
 	then
 		the applicant is not approved
 end
