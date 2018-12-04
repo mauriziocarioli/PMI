@@ -149,41 +149,68 @@
   <table>
     <entry>
       <string>$minYears</string>
-      <list/>
+      <list>
+        <string>0</string>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>$maxYears</string>
-      <list/>
+      <list>
+        <string>15</string>
+        <string>15</string>
+      </list>
     </entry>
     <entry>
       <string>$annualMIP</string>
-      <list/>
+      <list>
+        <string>45</string>
+        <string>70</string>
+      </list>
     </entry>
     <entry>
       <string>$maxLTV</string>
-      <list/>
+      <list>
+        <string>90</string>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>2</string>
+        <string>3</string>
+      </list>
     </entry>
     <entry>
       <string>$program</string>
-      <list/>
+      <list>
+        <string>Freddie Mac</string>
+        <string>Freddie Mac</string>
+      </list>
     </entry>
     <entry>
       <string>$minAmount</string>
-      <list/>
+      <list>
+        <string>0</string>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>$minLTV</string>
-      <list/>
+      <list>
+        <string>0</string>
+        <string>90</string>
+      </list>
     </entry>
     <entry>
       <string>$maxAmount</string>
-      <list/>
+      <list>
+        <string>650000</string>
+        <string>650000</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>3</idCol>
+  <rowsCount>2</rowsCount>
 </rule>
