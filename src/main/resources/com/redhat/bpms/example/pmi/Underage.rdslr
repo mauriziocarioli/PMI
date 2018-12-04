@@ -6,6 +6,8 @@ rule "Underage"
 	dialect "mvel"
 	when
 		If the applicant age is less than 18
+		>app : Applicant( creditScore < 300 )
+		>MortgageApplication( program matches "Native American Direct" )
 	then
 		the applicant is not approved
 end
