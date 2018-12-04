@@ -151,10 +151,10 @@
       <string>$minYears</string>
       <list>
         <string>0</string>
-        <string></string>
-        <string></string>
-        <string></string>
-        <string></string>
+        <string>0</string>
+        <string>0</string>
+        <string>0</string>
+        <string>0</string>
       </list>
     </entry>
     <entry>
@@ -211,7 +211,7 @@
       <string>$minAmount</string>
       <list>
         <string>0</string>
-        <string></string>
+        <string>0</string>
         <string>625000</string>
         <string>625000</string>
         <string>625000</string>
@@ -222,7 +222,7 @@
       <list>
         <string>0</string>
         <string>90</string>
-        <string></string>
+        <string>0</string>
         <string>78</string>
         <string>90</string>
       </list>
