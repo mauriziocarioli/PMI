@@ -23,7 +23,7 @@
         </field-data>
         <field-data>
           <name>ltv</name>
-          <value>81</value>
+          <value>91</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -34,23 +34,26 @@
       <name>calculation</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>29</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>15</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>annualMIP</fieldName>
           <expected>70</expected>
+          <actualResult>45</actualResult>
+          <successResult>false</successResult>
+          <explanation>[mortgage] field [annualMIP] was [45] expected [70].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>mortgage</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-12-04 11:24:06.66 UTC</lastRunResult>
+  <lastRunResult>2018-12-04 11:30:35.554 UTC</lastRunResult>
   <rules>
     <string>Row 1 PMI</string>
   </rules>
