@@ -18,12 +18,12 @@
         </field-data>
         <field-data>
           <name>baseLoanAmount</name>
-          <value>654000</value>
+          <value>624000</value>
           <nature>4</nature>
         </field-data>
         <field-data>
           <name>ltv</name>
-          <value>80</value>
+          <value>79</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -34,17 +34,17 @@
       <name>calculation</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>25</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>29</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>annualMIP</fieldName>
           <expected>45</expected>
-          <actualResult>50</actualResult>
+          <actualResult></actualResult>
           <successResult>false</successResult>
-          <explanation>[mortgage] field [annualMIP] was [50] expected [45].</explanation>
+          <explanation>[mortgage] field [annualMIP] was [] expected [45].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -53,7 +53,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-12-03 22:26:03.760 UTC</lastRunResult>
+  <lastRunResult>2018-12-04 11:24:06.66 UTC</lastRunResult>
   <rules>
     <string>Row 1 PMI</string>
   </rules>
