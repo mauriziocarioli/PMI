@@ -32,12 +32,17 @@
       <name>application</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>36</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>approved</fieldName>
           <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[applicant] field [approved] was [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -46,6 +51,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2018-12-04 11:23:14.848 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
