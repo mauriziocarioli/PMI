@@ -56,6 +56,68 @@
               </fieldConstraint>
             </constraints>
           </compositeConstraint>
+          <compositeConstraint>
+            <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+            <constraints>
+              <fieldConstraint>
+                <value>$minAmount</value>
+                <operator>&gt;</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>MortgageApplication</factType>
+                <fieldName>baseLoanAmount</fieldName>
+                <fieldType>Integer</fieldType>
+              </fieldConstraint>
+              <fieldConstraint>
+                <value>$maxAmount</value>
+                <operator>&lt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>MortgageApplication</factType>
+                <fieldName>baseLoanAmount</fieldName>
+                <fieldType>Integer</fieldType>
+              </fieldConstraint>
+            </constraints>
+          </compositeConstraint>
+          <compositeConstraint>
+            <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+            <constraints>
+              <fieldConstraint>
+                <value>$minLTV</value>
+                <operator>&gt;</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>MortgageApplication</factType>
+                <fieldName>ltv</fieldName>
+                <fieldType>Double</fieldType>
+              </fieldConstraint>
+              <fieldConstraint>
+                <value>$maxLTV</value>
+                <operator>&lt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>MortgageApplication</factType>
+                <fieldName>ltv</fieldName>
+                <fieldType>Double</fieldType>
+              </fieldConstraint>
+            </constraints>
+          </compositeConstraint>
         </constraints>
       </constraintList>
       <factType>MortgageApplication</factType>
@@ -98,11 +160,27 @@
       <list/>
     </entry>
     <entry>
+      <string>$maxLTV</string>
+      <list/>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
       <list/>
     </entry>
     <entry>
       <string>$program</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>$minAmount</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>$minLTV</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>$maxAmount</string>
       <list/>
     </entry>
   </table>
