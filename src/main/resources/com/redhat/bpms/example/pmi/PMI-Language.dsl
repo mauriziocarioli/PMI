@@ -1,3 +1,4 @@
-[when] If the applicant age is less than {age} = applicant : Applicant( age < {age} )
+[when] If the applicant age is less than {minage} = applicant : Applicant( age < {minage} )
+[when] If the applicant credit score is less than {minscore} = applicant : Applicant(creditScore < {minscore})
 [then] the applicant is not approved = applicant.setApproved( false )
-[when]The mortgage program is {program} = mortgage:MortgageApplication( program == {program} )
+[when] If the mortgage program is {program} = mortgage:MortgageApplication( program == {program} )
