@@ -56,6 +56,8 @@
   <lastRunResult>2018-12-04 11:24:06.66 UTC</lastRunResult>
   <rules>
     <string>Row 1 PMI</string>
+    <string>Row 2 PMI</string>
+    <string>Row 3 PMI</string>
   </rules>
   <inclusive>true</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
