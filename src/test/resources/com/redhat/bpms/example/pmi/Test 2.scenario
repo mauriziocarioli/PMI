@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test 1.scenario</name>
+  <name>Test 2.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -23,7 +23,7 @@
         </field-data>
         <field-data>
           <name>ltv</name>
-          <value>79</value>
+          <value>81</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -41,7 +41,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>annualMIP</fieldName>
-          <expected>45</expected>
+          <expected>70</expected>
           <actualResult></actualResult>
           <successResult>false</successResult>
           <explanation>[mortgage] field [annualMIP] was [] expected [45].</explanation>
