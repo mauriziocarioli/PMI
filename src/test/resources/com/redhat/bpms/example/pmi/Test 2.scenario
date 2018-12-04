@@ -42,11 +42,8 @@
         <expect-field>
           <fieldName>annualMIP</fieldName>
           <expected>70</expected>
-          <actualResult></actualResult>
-          <successResult>false</successResult>
-          <explanation>[mortgage] field [annualMIP] was [] expected [45].</explanation>
           <operator>==</operator>
-          <nature>1</nature>
+          <nature>0</nature>
         </expect-field>
       </fieldValues>
       <name>mortgage</name>
