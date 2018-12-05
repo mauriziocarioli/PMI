@@ -5,5 +5,8 @@ import java.lang.Number;
 rule "Bad Credit"
 	dialect "mvel"
 	when
+		If the mortgage program is FHA
+		If the applicant credit score is less than 300
 	then
+		the applicant is not approved
 end
