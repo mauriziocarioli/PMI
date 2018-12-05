@@ -1,0 +1,9 @@
+package com.redhat.bpms.example.pmi;
+
+import java.lang.Number;
+
+rule "Bad Credit"
+	dialect "mvel"
+	when
+	then
+end
