@@ -1,4 +1,4 @@
-Repository Init Content
+Private Mortgage Insurance
 =======================
 
-Your project description here.
+Showcase of various business rule editing metaphors in Drools using a mortgage insurance use case
