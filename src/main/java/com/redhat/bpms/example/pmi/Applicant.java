@@ -10,20 +10,14 @@ import java.io.Serializable;
 
 public class Applicant implements Serializable {
 
-	static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -6802443485036869625L;
 
-	@org.kie.api.definition.type.Label("SSN")
+	@org.kie.api.definition.type.Label(value = "SSN")
 	private String ssn;
-	@org.kie.api.definition.type.Label("name")
+	@org.kie.api.definition.type.Label(value = "name")
 	private String name;
-	@org.kie.api.definition.type.Label("credit score")
+	@org.kie.api.definition.type.Label(value = "credit score")
 	private Double creditScore;
-
-	@org.kie.api.definition.type.Label("age")
-	private java.lang.Integer age;
-
-	@org.kie.api.definition.type.Label(value = "approved")
-	private java.lang.Boolean approved;
 
 	public Applicant() {
 	}
@@ -52,30 +46,10 @@ public class Applicant implements Serializable {
 		this.creditScore = creditScore;
 	}
 
-	public java.lang.Integer getAge() {
-		return this.age;
-	}
-
-	public void setAge(java.lang.Integer age) {
-		this.age = age;
-	}
-
-	public java.lang.Boolean getApproved() {
-		return this.approved;
-	}
-
-	public void setApproved(java.lang.Boolean approved) {
-		this.approved = approved;
-	}
-
-	public Applicant(java.lang.String ssn, java.lang.String name,
-			java.lang.Double creditScore, java.lang.Integer age,
-			java.lang.Boolean approved) {
+	public Applicant(String ssn, String name, Double creditScore) {
 		this.ssn = ssn;
 		this.name = name;
 		this.creditScore = creditScore;
-		this.age = age;
-		this.approved = approved;
 	}
 
 }
