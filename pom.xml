@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat.bpms.example</groupId>
   <artifactId>PMI</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>PMI</name>
-  <description></description>
+  <description>Demonstration of various business rule editing metaphors in Drools using a mortgage insurance use case</description>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
@@ -56,4 +56,8 @@
       </plugin>
     </plugins>
   </build>
+  <organization>
+  	<name>Red Hat</name>
+  	<url>www.redhat.com</url>
+  </organization>
 </project>
