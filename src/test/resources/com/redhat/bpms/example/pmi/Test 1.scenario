@@ -34,8 +34,8 @@
       <name>calculation</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>29</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>96</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -43,8 +43,8 @@
           <fieldName>annualMIP</fieldName>
           <expected>45</expected>
           <actualResult></actualResult>
-          <successResult>true</successResult>
-          <explanation>[mortgage] field [annualMIP] was [45].</explanation>
+          <successResult>false</successResult>
+          <explanation>[mortgage] field [annualMIP] was [] expected [45].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -53,10 +53,8 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-12-04 11:25:54.164 UTC</lastRunResult>
-  <rules>
-    <string>Row 1 PMI</string>
-  </rules>
+  <lastRunResult>2019-01-08 19:42:14.624 UTC</lastRunResult>
+  <rules/>
   <inclusive>true</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
   <imports>
