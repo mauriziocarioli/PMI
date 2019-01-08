@@ -18,12 +18,12 @@
         </field-data>
         <field-data>
           <name>baseLoanAmount</name>
-          <value>624000</value>
+          <value>625000</value>
           <nature>4</nature>
         </field-data>
         <field-data>
           <name>ltv</name>
-          <value>79</value>
+          <value>90</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -34,7 +34,7 @@
       <name>calculation</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>22</executionTimeResult>
+      <executionTimeResult>29</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -54,10 +54,13 @@
     </expect-fact>
     <expect-rule>
       <ruleName>Row 1 PMI Table</ruleName>
+      <explanation>Rule [Row 1 PMI Table] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-01-08 19:43:33.87 UTC</lastRunResult>
+  <lastRunResult>2019-01-08 19:44:05.815 UTC</lastRunResult>
   <rules/>
   <inclusive>true</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
