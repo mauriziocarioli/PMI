@@ -52,13 +52,13 @@
       <name>mortgage</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>Row 2 PMI Table</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
   </fixtures>
   <lastRunResult>2018-12-04 11:32:19.537 UTC</lastRunResult>
-  <rules>
-    <string>Row 1 PMI</string>
-    <string>Row 2 PMI</string>
-    <string>Row 3 PMI</string>
-  </rules>
+  <rules/>
   <inclusive>true</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
   <imports>
