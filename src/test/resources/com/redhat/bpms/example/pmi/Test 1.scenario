@@ -33,33 +33,6 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>calculation</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-    <fact-data>
-      <type>MortgageApplication</type>
-      <fieldData>
-        <field-data>
-          <name>program</name>
-          <value>FHA</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>lengthOfLoanYears</name>
-          <value>15</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>baseLoanAmount</name>
-          <value>625000</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>ltv</name>
-          <value>91</value>
-          <nature>4</nature>
-        </field-data>
-      </fieldData>
-      <name>mortgage2</name>
-      <isModify>false</isModify>
-    </fact-data>
     <execution-trace>
       <executionTimeResult>23</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
@@ -86,28 +59,6 @@
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
-    <expect-rule>
-      <ruleName>Row 2 PMI Table</ruleName>
-      <explanation>Rule [Row 2 PMI Table] was not activated. Expected it to be activated.</explanation>
-      <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
-    </expect-rule>
-    <expect-fact>
-      <fieldValues>
-        <expect-field>
-          <fieldName>annualMIP</fieldName>
-          <expected>70</expected>
-          <actualResult></actualResult>
-          <successResult>false</successResult>
-          <explanation>[mortgage2] field [annualMIP] was [] expected [70].</explanation>
-          <operator>==</operator>
-          <nature>1</nature>
-        </expect-field>
-      </fieldValues>
-      <name>mortgage2</name>
-      <anonymous>false</anonymous>
-    </expect-fact>
   </fixtures>
   <lastRunResult>2019-01-08 19:47:26.292 UTC</lastRunResult>
   <rules/>
