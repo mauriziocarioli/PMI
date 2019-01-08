@@ -34,7 +34,7 @@
       <name>calculation</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>36</executionTimeResult>
+      <executionTimeResult>31</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -54,10 +54,13 @@
     </expect-fact>
     <expect-rule>
       <ruleName>Row 3 PMI Table</ruleName>
+      <explanation>Rule [Row 3 PMI Table] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-01-08 19:52:14.446 UTC</lastRunResult>
+  <lastRunResult>2019-01-08 19:53:44.203 UTC</lastRunResult>
   <rules/>
   <inclusive>true</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
