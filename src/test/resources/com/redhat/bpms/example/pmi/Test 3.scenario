@@ -53,11 +53,8 @@
       <anonymous>false</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>PMI Tree_2</ruleName>
-      <explanation>Rule [PMI Tree_2] was not activated. Expected it to be activated.</explanation>
+      <ruleName>Row 3 PMI Table</ruleName>
       <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
   <lastRunResult>2019-01-08 19:52:14.446 UTC</lastRunResult>
