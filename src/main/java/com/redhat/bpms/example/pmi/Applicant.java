@@ -12,12 +12,15 @@ public class Applicant implements Serializable {
 
 	private static final long serialVersionUID = -6802443485036869625L;
 
-	@org.kie.api.definition.type.Label(value = "SSN")
+	@org.kie.api.definition.type.Label("SSN")
 	private String ssn;
-	@org.kie.api.definition.type.Label(value = "name")
+	@org.kie.api.definition.type.Label("name")
 	private String name;
-	@org.kie.api.definition.type.Label(value = "credit score")
+	@org.kie.api.definition.type.Label("credit score")
 	private Double creditScore;
+
+	@org.kie.api.definition.type.Label(value = "approved")
+	private java.lang.Boolean approved;
 
 	public Applicant() {
 	}
@@ -46,10 +49,20 @@ public class Applicant implements Serializable {
 		this.creditScore = creditScore;
 	}
 
-	public Applicant(String ssn, String name, Double creditScore) {
+	public java.lang.Boolean getApproved() {
+		return this.approved;
+	}
+
+	public void setApproved(java.lang.Boolean approved) {
+		this.approved = approved;
+	}
+
+	public Applicant(java.lang.String ssn, java.lang.String name,
+			java.lang.Double creditScore, java.lang.Boolean approved) {
 		this.ssn = ssn;
 		this.name = name;
 		this.creditScore = creditScore;
+		this.approved = approved;
 	}
 
 }
