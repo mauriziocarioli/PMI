@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test 3.scenario</name>
+  <name>Test 9.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -13,7 +13,7 @@
         </field-data>
         <field-data>
           <name>lengthOfLoanYears</name>
-          <value>15</value>
+          <value>30</value>
           <nature>4</nature>
         </field-data>
         <field-data>
@@ -23,7 +23,7 @@
         </field-data>
         <field-data>
           <name>ltv</name>
-          <value>77</value>
+          <value>96</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -41,7 +41,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>annualMIP</fieldName>
-          <expected>45</expected>
+          <expected>105</expected>
           <actualResult></actualResult>
           <successResult>true</successResult>
           <explanation>[mortgage] field [annualMIP] was [45].</explanation>
@@ -53,7 +53,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>Row 3 PMI Table</ruleName>
+      <ruleName>Row 9 PMI Table</ruleName>
       <expectedFire>true</expectedFire>
     </expect-rule>
   </fixtures>
