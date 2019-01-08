@@ -61,7 +61,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>30</executionTimeResult>
+      <executionTimeResult>23</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -88,22 +88,28 @@
     </expect-rule>
     <expect-rule>
       <ruleName>Row 2 PMI Table</ruleName>
+      <explanation>Rule [Row 2 PMI Table] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>annualMIP</fieldName>
           <expected>70</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[mortgage2] field [annualMIP] was [] expected [70].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>mortgage2</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-01-08 19:45:29.798 UTC</lastRunResult>
+  <lastRunResult>2019-01-08 19:47:26.292 UTC</lastRunResult>
   <rules/>
   <inclusive>true</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
