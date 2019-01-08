@@ -19,8 +19,11 @@ public class Applicant implements Serializable {
 	@org.kie.api.definition.type.Label("credit score")
 	private Double creditScore;
 
-	@org.kie.api.definition.type.Label(value = "approved")
+	@org.kie.api.definition.type.Label("approved")
 	private java.lang.Boolean approved;
+
+	@org.kie.api.definition.type.Label(value = "age")
+	private java.lang.Integer age;
 
 	public Applicant() {
 	}
@@ -57,12 +60,22 @@ public class Applicant implements Serializable {
 		this.approved = approved;
 	}
 
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
 	public Applicant(java.lang.String ssn, java.lang.String name,
-			java.lang.Double creditScore, java.lang.Boolean approved) {
+			java.lang.Double creditScore, java.lang.Boolean approved,
+			java.lang.Integer age) {
 		this.ssn = ssn;
 		this.name = name;
 		this.creditScore = creditScore;
 		this.approved = approved;
+		this.age = age;
 	}
 
 }
