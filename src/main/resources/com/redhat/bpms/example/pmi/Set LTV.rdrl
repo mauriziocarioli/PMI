@@ -3,11 +3,13 @@ package com.redhat.bpms.example.pmi;
 import java.lang.Number;
 
 rule "Set LTV"
-	@governance(defined)
 	dialect "mvel"
-	ruleflow-group "initialization"
+	salience 5
 	when
 		mortgage : MortgageApplication( property : property, value : property.price, loan : baseLoanAmount)
 	then
-		mortgage.setLtv( loan/value );
+		modify( mortgage ) {
+				setLtv( loan/value )
+		}
+		System.out.println(">>>>>>>>>>>>>>>>>>>>> firing "+drools.getRule().getName()+" loan = "+loan+" value = "+value+" ltv="+mortgage.ltv);
 end
