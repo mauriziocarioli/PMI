@@ -30,9 +30,6 @@
       <name>mortgage</name>
       <isModify>false</isModify>
     </fact-data>
-    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-      <name>calculation</name>
-    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
       <executionTimeResult>31</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
@@ -61,8 +58,11 @@
     </expect-rule>
   </fixtures>
   <lastRunResult>2019-01-08 19:53:44.203 UTC</lastRunResult>
-  <rules/>
-  <inclusive>true</inclusive>
+  <rules>
+    <string>Set LTV</string>
+    <string>Validate</string>
+  </rules>
+  <inclusive>false</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
   <imports>
     <imports/>
