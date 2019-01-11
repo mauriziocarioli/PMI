@@ -31,7 +31,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>86</executionTimeResult>
+      <executionTimeResult>2003</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -57,7 +57,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-01-08 19:50:25.392 UTC</lastRunResult>
+  <lastRunResult>2019-01-11 12:06:26.882 UTC</lastRunResult>
   <rules>
     <string>Set LTV</string>
     <string>Validate</string>
