@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test Bad Cfredit.scenario</name>
+  <name>Test Bad Credit.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -52,7 +52,10 @@
     </expect-fact>
   </fixtures>
   <lastRunResult>2018-12-04 11:23:14.848 UTC</lastRunResult>
-  <rules/>
+  <rules>
+    <string>Set LTV</string>
+    <string>Validate</string>
+  </rules>
   <inclusive>false</inclusive>
   <packageName>com.redhat.bpms.example.pmi</packageName>
   <imports>
