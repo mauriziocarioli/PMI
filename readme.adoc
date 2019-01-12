@@ -1,0 +1,14 @@
+Private Mortgage Insurance
+--------------------------
+
+Demonstration of various business rule editing metaphors in Drools using a mortgage insurance use case:
+
+* Domain model with enumerations
+* Two simple *guided rules*: "Set LTV" and "Validate".
+* Two simple *guided rules with Domain Specific Language*: "Underage" and "Bad Credit"
+* A *Spreadsheet Decision Table*: "PMI Spreadsheet"
+* A *Guided Decision Table*: "PMI Table"
+* A *Guided Rule Template*: "PMI Template"
+* A *Guided Decision Tree*: "PMI Tree" (the user must be allowed to read the tree editor)
+* A *Ruleflow*
+* Several *Test Scenarios*
